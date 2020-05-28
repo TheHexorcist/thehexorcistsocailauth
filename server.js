@@ -2,7 +2,7 @@
 
 const express     = require('express');
 const bodyParser  = require('body-parser');
-const fccTesting  = require('./freeCodeCamp/fcctesting.js');
+//const fccTesting  = require('./freeCodeCamp/fcctesting.js');
 const session     = require('express-session');
 const mongo       = require('mongodb').MongoClient;
 const passport    = require('passport');
@@ -10,7 +10,7 @@ const GitHubStrategy = require('passport-github').Strategy;
 
 const app = express();
 
-fccTesting(app); //For FCC testing purposes
+//fccTesting(app); //For FCC testing purposes
 
 app.use('/public', express.static(process.cwd() + '/public'));
 app.use(bodyParser.json());
