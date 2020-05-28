@@ -7,12 +7,25 @@ html
     meta(http-equiv='X-UA-Compatible', content='IE=edge')
     meta(name='viewport', content='width=device-width, initial-scale=1')
     link(rel='stylesheet', href='/public/style.css')
+    
+    link(rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css')
+    link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css')
+    link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/4.9.1/bootstrap-social.min.css')
+
+    
   body
     h1.border.center FCC Advanced Node and Express
     h2.center Social Login
     .login.center
-      a(href='/auth/github') Login with Github!
-      
+      a(href='/auth/github'  class='btn btn-social btn-github') Login with Github!
+        i(class='fa fa-github')
+
+    div
+    .footer
+      a(href='http://github.com/TheHexorcist/thehexorcistsocailauth' class='btn btn-social btn-github') The Source
+        i(class='fa fa-github')
+
         
-    script(src='https://code.jquery.com/jquery-2.2.1.min.js', integrity='sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00=', crossorigin='anonymous')
+    script(src='https://code.jquery.com/jquery-2.2.1.min.js')
     script(src='/public/client.js')
+    //script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js')
