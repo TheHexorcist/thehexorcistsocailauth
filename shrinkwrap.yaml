@@ -3,7 +3,7 @@ dependencies:
   cors: 2.8.5
   express: 4.17.1
   express-session: 1.17.1
-  helmet: 3.22.0
+  helmet: 3.22.1
   mongodb: 3.5.8
   passport: 0.4.1
   passport-github: 1.1.0
@@ -363,7 +363,7 @@ packages:
       node: '>=4.0.0'
     resolution:
       integrity: sha512-Rz953ZNEFk8sT2XvewXkYN0Ho4GEZdjAZy4stjiEQV3eN7GDxg1QKmYggH7otDyIA7uGA6XnUMVSgeJwbR5X+w==
-  /helmet/3.22.0:
+  /helmet/3.22.1:
     dependencies:
       depd: 2.0.0
       dns-prefetch-control: 0.2.0
@@ -384,7 +384,7 @@ packages:
     engines:
       node: '>=4.0.0'
     resolution:
-      integrity: sha512-Xrqicn2nm1ZIUxP3YGuTBmbDL04neKsIT583Sjh0FkiwKDXYCMUqGqC88w3NUvVXtA75JyR2Jn6jw6ZEMOD+ZA==
+      integrity: sha512-6/mBacEbbskpmZiNg6rqfC8obo4n8+w7cofaJkQjqQevq+Hlz9ocIUupFLNLnCCtVkThDS8ov+StHMQ8mM/Jjw==
   /hide-powered-by/1.1.0:
     dev: false
     engines:
@@ -996,7 +996,7 @@ specifiers:
   cors: ^2.8.5
   express: ^4.17.1
   express-session: ^1.17.1
-  helmet: ^3.21.3
+  helmet: ^3.22.1
   mongodb: ^3.5.8
   passport: ^0.4.1
   passport-github: ^1.1.0

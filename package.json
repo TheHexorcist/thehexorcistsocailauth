@@ -1,5 +1,5 @@
 {
-  "name": "Github Authentication",
+  "name": "github_authentication",
   "author": "http://github.com/TheHexorcist",
   "version": "0.0.1",
   "description": "What am I about?",
@@ -12,7 +12,7 @@
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "express-session": "^1.17.1",
-    "helmet": "^3.21.3",
+    "helmet": "^3.22.1",
     "mongodb": "^3.5.8",
     "passport": "^0.4.1",
     "passport-github": "^1.1.0",
