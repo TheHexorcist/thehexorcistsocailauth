@@ -17,7 +17,11 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 app.set('view engine', 'pug')
 
-mongo.connect(process.env.DATABASE, (err, client) => {
+mongo.connect(process.env.DATABASE, {
+  useUnifiedTopology: true,
+  useNewUrlParser: true,
+  },
+  (err, client) => {
     var db = client.db('myDB');
     if(err) {
         console.log('Database error: ' + err);
