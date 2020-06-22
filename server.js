@@ -9,6 +9,7 @@ const GitHubStrategy = require('passport-github').Strategy;
 
 const app = express();
 
+require('dotenv').config()
 
 app.use('/public', express.static(process.cwd() + '/public'));
 app.use(bodyParser.json());
