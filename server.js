@@ -65,7 +65,7 @@ mongo.connect(process.env.DATABASE, {
         passport.use(new GitHubStrategy({
             clientID: process.env.GITHUB_CLIENT_ID,
             clientSecret: process.env.GITHUB_CLIENT_SECRET,
-            callbackURL: "https://thehexorcistsocailauth.glitch.me/auth/github/callback"
+            callbackURL: "https://thehexorcistsocialauth.herokuapp.com/callback"
           },
           function(accessToken, refreshToken, profile, cb) {
               console.log(profile);
