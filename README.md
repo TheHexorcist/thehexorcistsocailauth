@@ -1,3 +1,3 @@
 
-https://thehexorcistsocailauth.glitch.me/
+https://thehexorcistsocialauth.herokuapp.com/
 
