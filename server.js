@@ -38,16 +38,20 @@ mongo.connect(process.env.DATABASE, {
       
         function ensureAuthenticated(req, res, next) {
           if (req.isAuthenticated()) {
+              console.log(req);
               return next();
           }
+          console.log(req);
           res.redirect('/');
         };
 
         passport.serializeUser((user, done) => {
+          console.log(user);
           done(null, user.id);
         });
 
         passport.deserializeUser((id, done) => {
+            console.log(id)
             db.collection('socialusers').findOne(
                 {id: id},
                 (err, doc) => {
@@ -96,8 +100,9 @@ mongo.connect(process.env.DATABASE, {
           .get(passport.authenticate('github'));
       
         app.route('/auth/github/callback')
-          .get(passport.authenticate('github', { failureRedirect: '/' }), (req,res) => {
+          .get(passport.authenticate('github', { failureRedirect: '/', failureFlash: true }), (req,res) => {
               res.redirect('/profile');
+              console.log(res);
           });
       
         /*
@@ -112,6 +117,7 @@ mongo.connect(process.env.DATABASE, {
 
         app.route('/profile')
           .get(ensureAuthenticated, (req, res) => {
+               console.log(req)
                res.render(process.cwd() + '/views/pug/profile', {user: req.user});
           });
 
